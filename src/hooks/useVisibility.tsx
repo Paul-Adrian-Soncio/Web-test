@@ -10,7 +10,7 @@ interface VisibilityHookProps {
 
 const useVisibility = ({ targetContainerRef, onBecomeVisible, dependencies = [] }: VisibilityHookProps) => {
 
-    const [isVisible, setIsVisible] = useState(true)
+    const [isVisible, setIsVisible] = useState(false)
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
